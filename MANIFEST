@@ -1,0 +1,7 @@
+Makefile.PL
+MANIFEST
+README
+Changes
+lib/WWW/Dattebayo.pm
+t/base.t
+META.yml                                 Module meta-data (added by MakeMaker)

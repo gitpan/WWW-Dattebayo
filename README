@@ -1,0 +1,42 @@
+NAME
+    WWW::Dattebayo- Perl module for checking the Dattebayo tracker
+
+SYNOPSIS
+      use WWW::Dattebayo;
+      use Data::Dumper;
+      my $db = WWW::Dattebayo->new();
+      my $list = $db->list();
+      print Dumper $list;
+
+DESCRIPTION
+    This module allows you to check Dattebayos torrent tracker using Perl.
+    Its list() method will return the complete list of files and their
+    attributes.
+
+    WWW::Dattebayo uses LWP::UserAgent as its base class. So you can use all
+    methods from LWP::UserAgent on WWW::Dattebayo. This allows you to handle
+    your proxies, etc... directly via LWP.
+
+    PLEASE NOTE: Thou shalt not request the list() method every minute.
+    Dattebayo is a large fansub group and they take the internet seriously.
+    Their release schedule is really simple. So it should be fair enough if
+    you call the method only when you need it.
+
+Methods
+    * $db->list()
+        This method will return the a hashref containing all files and
+        attributes listed on http://www.dattebayo.com/t/. Make sure to read
+        the note above.
+
+AUTHOR
+    Sebastian Stumpf <sepp@perlhacker.org>
+
+COPYRIGHT
+    Copyright 2007 Sebastian Stumpf. All rights reserved.
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    LWP::UserAgent(3), HTML::TokeParser(3).
+
