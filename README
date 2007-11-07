@@ -1,5 +1,5 @@
 NAME
-    WWW::Dattebayo- Perl module for checking the Dattebayo tracker
+    WWW::Dattebayo - Perl module for checking the Dattebayo tracker
 
 SYNOPSIS
       use WWW::Dattebayo;

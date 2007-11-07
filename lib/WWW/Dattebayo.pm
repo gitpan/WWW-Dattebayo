@@ -7,7 +7,7 @@ use warnings;
 use base qw(LWP::UserAgent);
 use HTML::TokeParser;
 
-our $VERSION = '0.01';
+our $VERSION = '0.0.2';
 
 sub new
 {
@@ -79,7 +79,7 @@ __END__
 
 =head1 NAME
 
-WWW::Dattebayo- Perl module for checking the Dattebayo tracker
+WWW::Dattebayo - Perl module for checking the Dattebayo tracker
 
 =head1 SYNOPSIS
 
